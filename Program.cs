@@ -59,6 +59,7 @@ namespace FrozenMPQ
                     Console.WriteLine("All desired operations completed. Flushing & closing.");
                     archive.Compact(listfileName);
                     archive.Flush();
+                    archive.Dispose();
                 }
             }
         }
