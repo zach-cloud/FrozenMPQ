@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FrozenMPQ": {
+      "commandName": "Project",
+      "commandLineArgs": "ext mymap.w3x test"
+    }
+  }
+}
