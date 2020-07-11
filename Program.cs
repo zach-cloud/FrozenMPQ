@@ -95,6 +95,12 @@ namespace FrozenMPQ
                 Console.WriteLine("File does not exist: in/" + filename + " skipping. . .");
                 return;
             }
+            if (archive.HasFile(filename))
+            {
+                Console.WriteLine("File already exists, deleting");
+                archive.DeleteFile(filename);
+            }
+            Console.WriteLine("Inserting file");
             archive.AddFileFromDisk("in/" + filename, filename);
             Console.WriteLine("Successfully imported in/" + filename + " as " + filename);
         }
