@@ -1,5 +1,3 @@
-Project is in progress.
-
 # Background
 
 While developing a tool to edit JASS code files, I encountered the need to extract and import JASS files from MPQ archives. The only existing Java project which can do this is JMPQ3, however it rebuilds the entire MPQ in order to add files, which does not work for my use case. It's open source, so I do eventually want to add this functionality to the JMPQ3 project.
@@ -8,4 +6,23 @@ In the meantime, I wanted a way to add this feature quickly. Existing MPQ librar
 
 # Usage
 
+Download the release.zip or build the project yourself. You need to have "FrozenMPQ.exe", "listfile.txt", "StormLibSharp.dll", "StormLib.dll", "FrozenMPQ.dll", "FrozenMPQ.runtimeconfig.json", and your map file in the same directory.
+
+Run the application as such:
+./FrozenMPQ.exe <action> <mpq> <file1> <file2> ... <fileX>
+  
+The action can either be "ext" or "imp" (extract or import).
+The mpq should be a relative path to your MPQ file
+You can list 1 or more files to extract/import.
+
+If you specify extract, then it will extract the exact name from the MPQ archive into the "out" folder. For example extracting "war3map.w3u" and "scripts\war3map.j" would result in two files going into the "out" folder, one of them in the root folder and one in the scripts folder.
+
+If you specify import, then it will import the specified files from the "in" folder. For example importing "war3map.w3u" and "scripts\war3map.j" would expect those two files to exist in the "in" folder, one in root directory and one in the "scripts" folder.
+
+Detailed logging will be printed out to the console.
+
 # Build information
+
+Clone project and add StormLibSharp.dll as a dependency in Visual Studio
+
+Build as an x86 platform target
