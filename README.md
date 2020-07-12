@@ -23,6 +23,8 @@ Detailed logging will be printed out to the console.
 
 All file paths are relative to the FrozenMPQ.exe path.
 
+Requires .NET Core Runtime: https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x86&rid=win10-x86
+
 # Dependency Informtation
 
 This application uses a customized version of StormLibSharp ( https://github.com/robpaveza/stormlibsharp )
