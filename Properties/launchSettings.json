@@ -2,7 +2,7 @@
   "profiles": {
     "FrozenMPQ": {
       "commandName": "Project",
-      "commandLineArgs": "ext mymap.w3x test"
+      "commandLineArgs": "exp mymap.w3x test Scripts\\war3map.j"
     }
   }
 }
