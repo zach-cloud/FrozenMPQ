@@ -21,6 +21,16 @@ If you specify import, then it will import the specified files from the "in" fol
 
 Detailed logging will be printed out to the console.
 
+All file paths are relative to the FrozenMPQ.exe path.
+
+# Dependency Informtation
+
+This application uses a customized version of StormLibSharp ( https://github.com/robpaveza/stormlibsharp )
+
+Stormlibsharp uses Stormlib ( https://github.com/ladislav-zezula/StormLib )
+
+Full credit to Zezula for his MPQ editing code.
+
 # Build information
 
 Clone project and add StormLibSharp.dll as a dependency in Visual Studio
